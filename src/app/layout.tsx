@@ -18,11 +18,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} bg-slate-800 text-slate-100 container mx-auto p-4`}
+        className={`${inter.className} bg-slate-800 text-slate-100 flex gap-8 mx-auto p-4`}
       >
-        <div>
-          <Link href='/events'>Events</Link>
-          <Link href='/events'>Events</Link>
+        <div className='flex flex-col'>
+          <Link href='/events'>Events blah</Link>
+          <Link href='/events'>Events 2</Link>
           <Link href='/events'>Events</Link>
         </div>
         {children}
