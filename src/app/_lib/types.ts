@@ -1,7 +1,14 @@
+
 export type Song = {
     title: string,
     artist: string,
     votes: number,
+}
+
+export enum Vote {
+    Up,
+    Down,
+    None,
 }
 
 export type Event = {
