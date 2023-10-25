@@ -13,7 +13,7 @@ export default function Events() {
             <h1>Here are some events near you:</h1>
             <ul>
                 {events.map((event) => (
-                    <li>
+                    <li key={event.id}>
                         <Link href={`/events/${event.id}`}>{event.name}</Link>
                     </li>
                 ))}
